@@ -1,0 +1,25 @@
+{
+  "name": "react-app-template",
+  "version": "0.0.0",
+  "description": "A lightweight template for kick-starting react projects.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+	"prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ES-Schmidt/react-app-template.git"
+  },
+  "author": "ES-Schmidt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ES-Schmidt/react-app-template/issues"
+  },
+  "homepage": "https://github.com/ES-Schmidt/react-app-template#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "husky": "^8.0.1"
+  }
+}
