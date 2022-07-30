@@ -1,25 +1,38 @@
 {
-  "name": "react-app-template",
-  "version": "0.0.0",
-  "description": "A lightweight template for kick-starting react projects.",
-  "private": true,
-  "type": "module",
-  "scripts": {
-	"prepare": "husky install"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ES-Schmidt/react-app-template.git"
-  },
-  "author": "ES-Schmidt",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ES-Schmidt/react-app-template/issues"
-  },
-  "homepage": "https://github.com/ES-Schmidt/react-app-template#readme",
-  "devDependencies": {
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
-    "husky": "^8.0.1"
-  }
+	"name": "react-app-template",
+	"version": "0.0.0",
+	"description": "A lightweight template for kick-starting react projects.",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"prepare": "husky install",
+		"lint": "npm run lint:js && npm run lint:css",
+		"lint:js": "eslint --config ./config/.eslintrc.yaml --ignore-path ./config/.eslintignore --fix --ext .js,.jsx,.ts,.mjs,.cjs .",
+		"lint:css": "stylelint --config ./config/.stylelint.yaml --ignore-path ./config/.stylelintignore --fix **/*.css",
+		"format": "prettier --config ./config/.prettierrc.yaml --ignore-path ./config/.prettierignore --ignore-unknown --write **/*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ES-Schmidt/react-app-template.git"
+	},
+	"author": "ES-Schmidt",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ES-Schmidt/react-app-template/issues"
+	},
+	"homepage": "https://github.com/ES-Schmidt/react-app-template#readme",
+	"devDependencies": {
+		"@commitlint/cli": "^17.0.3",
+		"@commitlint/config-conventional": "^17.0.3",
+		"eslint": "^8.20.0",
+		"eslint-config-google": "^0.14.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-config-react": "^1.1.7",
+		"husky": "^8.0.1",
+		"prettier": "^2.7.1",
+		"stylelint": "^14.9.1",
+		"stylelint-config-prettier": "^9.0.3",
+		"stylelint-config-recess-order": "^3.0.0",
+		"stylelint-config-standard": "^26.0.0"
+	}
 }
