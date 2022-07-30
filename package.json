@@ -1,7 +1,7 @@
 {
-	"name": "react-app-template",
+	"name": "csr-react-app-template",
 	"version": "0.0.0",
-	"description": "A lightweight template for kick-starting react projects.",
+	"description": "A light-weight template for kick-starting client-side rendered react applications.",
 	"private": true,
 	"type": "module",
 	"scripts": {
@@ -13,14 +13,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ES-Schmidt/react-app-template.git"
+		"url": "git+https://github.com/ES-Schmidt/csr-react-app-template.git"
 	},
 	"author": "ES-Schmidt",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/ES-Schmidt/react-app-template/issues"
+		"url": "https://github.com/ES-Schmidt/csr-react-app-template/issues"
 	},
-	"homepage": "https://github.com/ES-Schmidt/react-app-template#readme",
+	"homepage": "https://github.com/ES-Schmidt/csr-react-app-template#readme",
 	"devDependencies": {
 		"@commitlint/cli": "^17.0.3",
 		"@commitlint/config-conventional": "^17.0.3",
