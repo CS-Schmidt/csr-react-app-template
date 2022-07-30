@@ -1,0 +1,3 @@
+'*.([cm]js|js?(x))': 'eslint --config ./config/.eslintrc.yaml --ignore-path ./config/.eslintignore --fix --ext .js,.jsx,.ts,.mjs,.cjs'
+'*.css': 'stylelint --config ./config/.stylelint.yaml --ignore-path ./config/.stylelintignore --fix'
+'*': 'prettier --config ./config/.prettierrc.yaml --ignore-path ./config/.prettierignore --ignore-unknown --write'
