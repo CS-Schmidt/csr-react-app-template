@@ -1,5 +1,5 @@
 # General Options
-printWidth: 100
+printWidth: 80
 proseWrap: 'preserve'
 useTabs: true
 tabWidth: 2

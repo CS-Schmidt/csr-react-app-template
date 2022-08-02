@@ -1,2 +1,6 @@
 # NodeJS Ignores
 **/node_modules/*
+
+# Build Ignores
+dist/
+log/
