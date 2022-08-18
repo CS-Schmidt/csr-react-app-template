@@ -13,7 +13,7 @@ bracketSpacing: true
 trailingComma: 'es5'
 arrowParens: 'always'
 
-# JSX Options
+# HTML & JSX Options
 quoteProps: 'as-needed'
 jsxSingleQuote: false
 bracketSameLine: false

@@ -4,11 +4,12 @@
 	"description": "A light-weight template for kick-starting client-side rendered react applications.",
 	"private": true,
 	"type": "module",
+	"root": true,
 	"scripts": {
 		"development": "webpack serve --node-env=development --config ./config/webpack.config.cjs",
 		"production": "webpack build --node-env=production --config ./config/webpack.config.cjs",
 		"lint": "npm run lint:js && npm run lint:css",
-		"lint:js": "eslint --config ./config/.eslintrc.yaml --ignore-path .gitignore --fix --ext .js,.jsx,.ts,.mjs,.cjs ./",
+		"lint:js": "eslint --config ./config/.eslintrc.yaml --ignore-path .gitignore --fix --ext .cjs,.js,.jsx,.mjs,.ts ./",
 		"lint:css": "stylelint --config ./config/.stylelintrc.yaml --ignore-path .gitignore --fix \"**/*.css\"",
 		"format": "prettier --config ./config/.prettierrc.yaml --ignore-path .gitignore --ignore-unknown --write **/*",
 		"prepare": "husky install"
@@ -31,7 +32,6 @@
 		"@commitlint/cli": "^17.0.3",
 		"@commitlint/config-conventional": "^17.0.3",
 		"@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
-		"autoprefixer": "^10.4.8",
 		"babel-loader": "^8.2.5",
 		"browserslist": "^4.21.3",
 		"compression-webpack-plugin": "^10.0.0",
@@ -58,8 +58,7 @@
 		"webpack": "^5.74.0",
 		"webpack-bundle-analyzer": "^4.5.0",
 		"webpack-cli": "^4.10.0",
-		"webpack-dev-server": "^4.9.3",
-		"webpack-merge": "^5.8.0"
+		"webpack-dev-server": "^4.9.3"
 	},
 	"dependencies": {
 		"core-js": "^3.24.1",
